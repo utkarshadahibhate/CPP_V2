@@ -15,17 +15,32 @@ int main()
         max = num2;
     }
 
-    for(int i = 1; i <= max; i++)
+    // while(true)
+    // {
+    //     if(max % num1 == 0 & max % num2 == 0)
+    //     {
+    //         LCM = max;
+    //         cout<<"LCM is: "<<LCM<<endl;
+    //     }
+    //     else
+    //     {
+    //         max++;
+    //     }
+    // }
+
+    for(int i = max;; max++)
     {
-        if(num1 % i == 0 & num2 % i == 0)
+        if(i % num1 == 0 & i % num2 == 0)
         {
             LCM = i;
+            //cout<<"LCM is : "<<LCM;
+            break;
         }
-        else
-        {
-            max++;
-        }
-        i++;
+        // else
+        // {
+        //     max++;
+        // }
+        // i++;
     }
     cout<<LCM<<endl;
 }
