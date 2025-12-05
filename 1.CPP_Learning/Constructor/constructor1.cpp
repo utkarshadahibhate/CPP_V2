@@ -3,10 +3,11 @@ using namespace std;
 
 class Student{
     public:
+    Student(int i_d, string n_m, float m_n);
     int id;
     string name;
     float marks;
-
+    //----------------------------------------------------------------
     //without constructor using member functions
     void student_info(int id, string name, float marks){
         this->id = id;
@@ -23,7 +24,7 @@ class Student{
         cout<<"--------------------------"<<endl;
 
     }
-
+    //-------------------------------------------------------------------
     //Using constructor
     // Non-Parameterized -- for holding data for object, also needs to be displayed with function or using i/o keyword.
     // Student(){
@@ -66,5 +67,5 @@ int main(){
 //Student s3 = Student();
 //s3.display();
 //Student s4 = Student(34,"Ronny",94);
-Student s5 = Student();
+Student s5 = Student(25,"Jeremy",101);
 }
